@@ -68,9 +68,7 @@ So let's fix that. We could probably just do an implicit return like the first p
 ```js
 const postPromise = fetch('http://wesbos.com/wp-json/wp/v2/posts');
 
-postPromise.then(data => data.json()).then(data => {console.log(data)}
-    
-)
+postPromise.then(data => data.json()).then(data => {console.log(data)})
 ```
 
 If we open it up in the console, we have the actual data that comes back from our blog. You see there's the content, excerpt, id, Wordpress slug, and all that stuff. 
